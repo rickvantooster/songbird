@@ -39,8 +39,8 @@ pub async fn ytdl(uri: impl AsRef<str>) -> Result<Input> {
 pub(crate) async fn _ytdl(uri: &str, pre_args: &[&str]) -> Result<Input> {
     let ytdl_args = [
         "--print-json",
-        "-f",
-        "webm[abr>0]/bestaudio/best",
+        // "-f",
+        // "webm[abr>0]/bestaudio/best",
         "-R",
         "infinite",
         "--no-playlist",
